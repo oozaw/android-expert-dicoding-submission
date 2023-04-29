@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/navigation_game">
+
+    <fragment
+        android:id="@+id/navigation_game"
+        android:name="com.dicoding.gt.news.NewsFragment"
+        android:label="@string/title_game"
+        tools:layout="@layout/fragment_news" />
+
+    <fragment
+        android:id="@+id/navigation_tech"
+        android:name="com.dicoding.gt.news.NewsFragment"
+        android:label="@string/title_tech"
+        tools:layout="@layout/fragment_news" />
+</navigation>

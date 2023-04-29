@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">G&amp;T</string>
+    <string name="title_favorite">Favorite</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_tech">Tech</string>
+    <string name="title_game">Game</string>
+    <string name="something_wrong">Oops… something went wrong</string>
+    <string name="favorite_click">Favorite Button</string>
+    <string name="detail_title">Detail News</string>
+</resources>
