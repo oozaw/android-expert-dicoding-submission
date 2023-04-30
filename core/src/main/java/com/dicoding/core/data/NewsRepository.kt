@@ -6,7 +6,6 @@ import com.dicoding.core.data.remote.response.ApiStatus
 import com.dicoding.core.data.remote.response.NewsResponse
 import com.dicoding.core.domain.model.News
 import com.dicoding.core.domain.repository.INewsRepository
-import com.dicoding.core.utils.AppExecutors
 import com.dicoding.core.utils.DataMapper
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
@@ -16,8 +15,7 @@ import javax.inject.Singleton
 @Singleton
 class NewsRepository @Inject constructor(
    private val remoteDataSource: RemoteDataSource,
-   private val localDataSource: LocalDataSource,
-   private val appExecutors: AppExecutors
+   private val localDataSource: LocalDataSource
 ): INewsRepository {
    override fun getGameNews(): Flow<Status<List<News>>> =
       object : NetworkBoundResource<List<News>,
@@ -85,8 +83,4 @@ class NewsRepository @Inject constructor(
             data?.figure == null || data.content == null || data.categories == null
 
       }.asFlow()
-
-   companion object {
-      const val TAG = "NewsRepository"
-   }
 }

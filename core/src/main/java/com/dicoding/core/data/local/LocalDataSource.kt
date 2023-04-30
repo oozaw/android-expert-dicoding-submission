@@ -8,7 +8,6 @@ import javax.inject.Singleton
 
 @Singleton
 class LocalDataSource @Inject constructor(private val newsDao: NewsDao) {
-   fun getAllNews(): Flow<List<NewsEntity>> = newsDao.getAllNews()
 
    fun getGameNews(): Flow<List<NewsEntity>> = newsDao.getGameNews()
 
