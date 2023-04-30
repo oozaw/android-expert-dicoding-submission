@@ -35,8 +35,6 @@ class DetailViewModelTest {
    private lateinit var newsUseCase: NewsUseCase
 
    private lateinit var detailViewModel: DetailViewModel
-   private val dummyNewsDetailResponse = DataDummy.generateDummyDetailNewsResponse()
-   private val dummyNewsResponse = DataDummy.generateDummyNewsResponse()
    private val dummyNews = DataDummy.generateDummyNews()
 
    @Before

@@ -11,12 +11,8 @@ import com.dicoding.core.domain.usecase.NewsInteractor
 import com.dicoding.core.domain.usecase.NewsUseCase
 import com.dicoding.gt.utils.DataDummy
 import com.dicoding.gt.utils.MainDispatcherRule
-import com.dicoding.gt.utils.getOrAwaitValue
 import com.dicoding.gt.utils.observeForTesting
 import kotlinx.coroutines.ExperimentalCoroutinesApi
-import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.asFlow
-import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.test.runTest
 import org.junit.Assert
 import org.junit.Before
