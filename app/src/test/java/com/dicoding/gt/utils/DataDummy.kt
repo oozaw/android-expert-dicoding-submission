@@ -48,7 +48,7 @@ object DataDummy {
       )
    }
 
-   fun generateListOfString(): List<String> {
+   private fun generateListOfString(): List<String> {
       return listOf("Games", "Console", "Reviews")
    }
 }
